@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     uglify: {
       production: {
         files: {
-          'js/scripts.min.js' : ['src/javascripts/lib/jquery.min.js', 'src/bootstrap-sass-3.3.4/assets/javascripts/bootstrap.js', 'src/javascripts/custom/*.js']
+          'js/scripts.min.js' : ['src/javascripts/lib/jquery.js', 'src/bootstrap-sass-3.3.4/assets/javascripts/bootstrap.js', 'src/javascripts/custom/*.js']
         }
       },
       development: {
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           preserveComments: 'all'
         },
         files: {
-          'js/scripts.min.js' : ['src/javascripts/lib/jquery-1.11.2.js', 'src/bootstrap-sass-3.3.4/assets/javascripts/bootstrap.js', 'src/javascripts/custom/*.js']
+          'js/scripts.min.js' : ['src/javascripts/lib/jquery.js', 'src/bootstrap-sass-3.3.4/assets/javascripts/bootstrap.js', 'src/javascripts/custom/*.js']
         }
       }
     },
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
           outputStyle: 'expanded'
         },
         files: {
-          'css/styles.css' : 'src/stylesheets/application.scss'
+          'css/styles.css' : 'src/scss/application.scss'
         }
       },
       production: {
@@ -37,18 +37,18 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files:{
-          'css/styles.css' : 'src/stylesheets/application.scss' 
+          'css/styles.css' : 'src/scss/application.scss' 
         }
       }
     },
 
     watch: {
       js: {
-        files: ['src/javascripts/*/*.js'],
+        files: ['src/javascripts/**/*.js'],
         tasks: ['uglify:development']
       },
       css:{
-        files: ['src/stylesheets/*.scss', 'src/bootstrap-sass-3.3.4/assets/stylesheets/**/*.scss'],
+        files: ['src/scss/*.scss', 'src/bootstrap-sass-3.3.4/assets/stylesheets/**/*.scss'],
         tasks: ['sass:development']
       }
     }
