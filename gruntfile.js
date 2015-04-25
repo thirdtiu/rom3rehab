@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     uglify: {
       production: {
         files: {
-          'js/scripts.min.js' : ['src/javascripts/lib/jquery-1.11.2.js', 'src/bootstrap-sass-3.3.4/assets/javascripts/bootstrap.js', 'src/javascripts/custom/*.js']
+          'js/scripts.min.js' : ['src/javascripts/lib/jquery.min.js', 'src/bootstrap-sass-3.3.4/assets/javascripts/bootstrap.js', 'src/javascripts/custom/*.js']
         }
       },
       development: {
