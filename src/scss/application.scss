@@ -2,4 +2,55 @@
 body{
     font-family: 'AvenirLTStd Roman', 'Muli', sans-serif;
     font-size: 16px;
+    color: #898c90;
+}
+
+.rr-btn{
+    -webkit-border-radius: 18px 19px 19px 18px/19px 19px 18px 18px;
+    -moz-border-radius: 18px 19px 19px 18px/19px 19px 18px 18px;
+    border-radius: 18px 19px 19px 18px/19px 19px 18px 18px;
+    background-color: #fff;
+    border: solid 1px #e68c4d;
+    background-image: -webkit-linear-gradient(bottom, #f79319, #ffc83f 46%, #fae7bf);
+    background-image: -moz-linear-gradient(bottom, #f79319, #ffc83f 46%, #fae7bf);
+    background-image: -o-linear-gradient(bottom, #f79319, #ffc83f 46%, #fae7bf);
+    background-image: -ms-linear-gradient(bottom, #f79319, #ffc83f 46%, #fae7bf);
+    background-image: linear-gradient(to top, #f79319, #ffc83f 46%, #fae7bf);
+    color: #484c51;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+#home-page-banner{
+    min-height: 563px;
+    margin-top: 105px;
+    position:relative;
+    
+    .logo{
+        margin-top: 100px;
+    }
+    .subheading{
+        font-size: 42px;
+        color:#44484e;
+        font-weight: 200;
+        line-height: 1.5;
+
+        span{
+            display: block;
+            color: #898c90;
+            margin-left: 40px;
+        }
+    }
+    .btn{
+        margin-left: 80px;
+    }
+
+    #home-lg-img{
+        position: absolute;
+    }
+}
+
+#footer{
+    clear:both;
+    font-size: 10px;
 }

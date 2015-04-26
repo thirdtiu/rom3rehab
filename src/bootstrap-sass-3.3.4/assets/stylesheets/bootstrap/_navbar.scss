@@ -13,7 +13,6 @@
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
   border: 1px solid transparent;
-
   // Prevent floats from breaking the navbar
   @include clearfix;
 
@@ -395,8 +394,10 @@
 
 // Default navbar
 .navbar-default {
-  background-color: $navbar-default-bg;
-  border-color: $navbar-default-border;
+  // background-color: $navbar-default-bg;
+  background-color: none;
+  // border-color: $navbar-default-border;
+  border:none;
 
   .navbar-brand {
     color: $navbar-default-brand-color;
@@ -413,6 +414,7 @@
 
   .navbar-nav {
     > li > a {
+      text-transform: uppercase;
       color: $navbar-default-link-color;
 
       &:hover,
@@ -425,8 +427,9 @@
       &,
       &:hover,
       &:focus {
-        color: $navbar-default-link-active-color;
-        background-color: $navbar-default-link-active-bg;
+        // color: $navbar-default-link-active-color;
+        // background-color: $navbar-default-link-active-bg;
+        font-weight: bold;
       }
     }
     > .disabled > a {
