@@ -4922,6 +4922,12 @@ body {
   text-transform: uppercase;
   font-size: 19px; }
 
+.read-more {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #36393e; }
+
 .module-block {
   margin-bottom: 50px; }
 
