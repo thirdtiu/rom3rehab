@@ -21,9 +21,16 @@ body{
     font-size: 19px;
 }
 
+.navbar{
+    margin-top: 20px;
+}
+.nav > li > a{
+    padding: 10px 45px;
+}
 #home-page-banner{
     min-height: 563px;
     margin-top: 105px;
+    margin-bottom: 100px;
     position:relative;
     
     .logo{
