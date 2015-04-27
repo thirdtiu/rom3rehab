@@ -21,6 +21,10 @@ body{
     font-size: 19px;
 }
 
+.module-block{
+    margin-bottom: 50px;
+}
+
 .navbar{
     margin-top: 20px;
 }
@@ -57,7 +61,86 @@ body{
     }
 }
 
+#main-section{
+    font-size: 14px;
+    color: #36393e;
+    font-weight: 300;
+    margin-bottom: 100px;
+
+    .page-name{
+        color: #36393e;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    li{
+        margin-bottom: 30px;
+    }
+
+}
+
 #footer{
     clear:both;
     font-size: 10px;
+}
+
+
+/* PAGE SPECIFIC STYLES */
+.contact-form{
+    border-left:1px solid #ccc;
+    padding: 0 0 100px 30px;
+}
+
+/** BOOTSTRAP overrides**/
+.media-large{
+    > .pull-left{
+        margin-right: 52px;
+    }
+    .media-heading{
+        font-size: 21px;
+    }
+
+    li{
+        margin-bottom: 0 !important;
+    }
+}
+.media-who-its-for{
+    > .pull-left{
+        margin-right: 63px;
+    }
+}
+
+.member{
+    margin:20px 0;
+    font-size: 13px;
+
+    .title{
+        font-size: 15px;
+        min-height: 63px;
+    }
+}
+
+.tech-columns{
+    margin-top:30px;
+}
+.tech-column{
+    a{
+        color: #36393e;
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .tech-img{
+        min-height: 310px;
+        img{
+            display: block;
+        }
+    }
+    .tech-body{
+        min-height: 180px;
+    }
+    .title{
+        font-size: 22px;
+    }
 }
