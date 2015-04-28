@@ -4992,23 +4992,28 @@ body {
   padding: 10px 45px; }
 
 #home-page-banner {
+  background: url(../images/img-matrix.jpg) left no-repeat;
   min-height: 563px;
   margin-top: 105px;
   margin-bottom: 100px;
-  position: relative; }
+  position: relative;
+  padding-left: 370px;
+  padding-top: 92px; }
   #home-page-banner .logo {
-    margin-top: 100px; }
+    margin-bottom: 43px; }
   #home-page-banner .subheading {
     font-size: 42px;
     color: #44484e;
     font-weight: 200;
-    line-height: 1.5; }
+    line-height: 1.5;
+    margin-left: 30px;
+    margin-bottom: 40px; }
     #home-page-banner .subheading span {
       display: block;
       color: #898c90;
-      margin-left: 40px; }
+      margin-left: 30px; }
   #home-page-banner .btn {
-    margin-left: 80px; }
+    margin-left: 110px; }
   #home-page-banner #home-lg-img {
     position: absolute; }
 
@@ -5052,6 +5057,9 @@ body {
   .member .title {
     font-size: 15px;
     min-height: 63px; }
+
+.row-2 .member .title {
+  min-height: 33px; }
 
 .tech-columns {
   margin-top: 30px; }
